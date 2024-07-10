@@ -1,10 +1,8 @@
-# Import socket module
-from socket import *
+from socket import * #imports socket module
 import sys  # In order to terminate the program
 
 # Create a TCP server socket
 serverSocket = socket(AF_INET, SOCK_STREAM)
-
 # Prepare a server socket
 serverPort = 6789  # Port number
 serverSocket.bind(('', serverPort))  # Bind to any available address on port 6789
